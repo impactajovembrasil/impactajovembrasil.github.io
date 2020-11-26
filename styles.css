@@ -1150,6 +1150,15 @@ time {
     transform: translate3d(200px, 0, 0);
   }
 }
+/* divs timeline only appearing to not break screen - mobile */
+@media (max-width: 371px) {
+  .timeline ul li:nth-child(odd) div {
+    transform: translate3d(0px, 0, 0);
+  }
+  .timeline ul li:nth-child(even) div {
+    transform: translate3d(0px, 0, 0);
+  }
+}
 .timeline ul li.in-view div {
   transform: none;
   visibility: visible;
