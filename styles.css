@@ -1153,8 +1153,8 @@ time {
     transform: translate3d(200px, 0, 0);
   }
 }
-/* divs timeline only appearing to not break screen - mobile */
-@media (max-width: 371px) {
+/* divs timeline only appearing to not break screen - mobile -> max width */
+@media (max-width: 1283px) {
   .timeline ul li:nth-child(odd) div {
     transform: translate3d(0px, 0, 0);
   }
