@@ -1015,6 +1015,9 @@ width:  300px;
 #termos {
   text-align: justify;
 }
+#termos p {
+  font-family: 'Comfortaa';
+}
 
 
 /* TIMELINE INTRO - SOBRE */
