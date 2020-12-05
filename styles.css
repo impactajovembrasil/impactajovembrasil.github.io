@@ -112,7 +112,7 @@ h1 {
 header nav {                     /*media (max-width: 991px)  body overflow hidden*/
   position: fixed;
   z-index: 100;
-  background-color: rgba(255,255,255,0.9);
+  background-color: rgba(255,255,255,1);
   width: 100%;
 }
 @media (min-width: 372px) {
@@ -166,7 +166,7 @@ header nav {                     /*media (max-width: 991px)  body overflow hidde
   height: 100vh;
   right: 0px;
   position: fixed;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 1);
 }
 @media (max-width: 371px) {
   .margem {
