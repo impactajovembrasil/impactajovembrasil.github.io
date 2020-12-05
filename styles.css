@@ -162,7 +162,7 @@ header nav {                     /*media (max-width: 991px)  body overflow hidde
   text-decoration: none;
 }
 #navmobile #whitenavbar {
-  width: 260px;
+  width: 100vw;
   height: 100vh;
   right: 0px;
   position: fixed;
