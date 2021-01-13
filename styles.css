@@ -1053,7 +1053,7 @@ width:  300px;
 #termos p {
   font-family: 'Comfortaa';
 }
-@media (min-width: 900px) {
+@media (max-width: 900px) {
   #termos h4 {
     font-size: 28px;
   }
@@ -1064,7 +1064,7 @@ width:  300px;
     font-size: 16px;
   }
 }
-@media (min-width:600px) {
+@media (max-width:600px) {
   #termos h4 {
     font-size: 26px;
   }
