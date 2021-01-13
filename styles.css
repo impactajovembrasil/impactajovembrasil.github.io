@@ -180,6 +180,9 @@ header nav {                     /*media (max-width: 991px)  body overflow hidde
   flex-direction: column;
   align-items: center;  /* elements in the center - menu for mobiles(cellphones,tablets,etc)*/
 }
+#navmobile .nav-item {
+	height: 3rem;
+}
 #navmobile .nav-link {
   height: 2rem;
   padding-left: 1rem;
