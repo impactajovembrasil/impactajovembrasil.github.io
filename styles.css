@@ -69,7 +69,7 @@ h6,
   font-family: 'Bebas Neue';
  }
 p {
-  font-size: 14px;
+  /*font-size: 14px;*/
   font-family: 'Comfortaa';
 }
 h3 {
@@ -903,7 +903,7 @@ width:  300px;
 		font-size: 24px;
 	}
 }
-@media (min-width: 600px) {
+@media (max-width: 900px) {
 	#container-FAQ section h4 {
 		font-size: 30px;
 	}
@@ -911,7 +911,7 @@ width:  300px;
 		font-size: 20px;
 	}
 }
-@media (min-width: 500px) {
+@media (max-width: 600px) {
 	#container-FAQ section h4 {
 		font-size: 28px;
 	}
@@ -919,7 +919,7 @@ width:  300px;
 		font-size: 18px;
 	}
 }
-@media (min-width: 400px) {
+@media (max-width: 500px) {
 	#container-FAQ section h4 {
 		font-size: 26px;
 	}
@@ -1053,7 +1053,7 @@ width:  300px;
 #termos p {
   font-family: 'Comfortaa';
 }
-@media (max-width: 900px) {
+@media (min-width: 900px) {
   #termos h4 {
     font-size: 28px;
   }
@@ -1064,7 +1064,7 @@ width:  300px;
     font-size: 16px;
   }
 }
-@media (max-width:600px) {
+@media (max-width:900px) {
   #termos h4 {
     font-size: 26px;
   }
