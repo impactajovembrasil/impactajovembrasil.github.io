@@ -895,6 +895,38 @@ width:  300px;
 	color: #58595b;
 	font-weight: normal;
 }
+@media (min-width: 900px) {
+	#container-FAQ section h4 {
+		font-size: 36px;
+	}
+	#container-FAQ section p.answer {
+		font-size: 24px;
+	}
+}
+@media (min-width: 600px) {
+	#container-FAQ section h4 {
+		font-size: 30px;
+	}
+	#container-FAQ section p.answer {
+		font-size: 20px;
+	}
+}
+@media (min-width: 500px) {
+	#container-FAQ section h4 {
+		font-size: 28px;
+	}
+	#container-FAQ section p.answer {
+		font-size: 18px;
+	}
+}
+@media (min-width: 400px) {
+	#container-FAQ section h4 {
+		font-size: 26px;
+	}
+	#container-FAQ section p.answer {
+		font-size: 16px;
+	}
+}
 .iframe-container{
   position: relative;
   width: 100%;
