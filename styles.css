@@ -178,7 +178,7 @@ header nav {                     /*media (max-width: 991px)  body overflow hidde
   /*top: 0; /* ! */
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: center;  /* elements in the center - menu for mobiles(cellphones,tablets,etc)*/
 }
 #navmobile .nav-link {
   height: 2rem;
@@ -189,7 +189,7 @@ header nav {                     /*media (max-width: 991px)  body overflow hidde
 #navmobile .collapse {
   transition: 300ms ease;
 }
-                                   /*********/
+/*********/
 .navbar-brand{
   font-size: 36px;
   font-family: 'Airport'; 
