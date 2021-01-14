@@ -125,6 +125,9 @@ header nav {                     /*media (max-width: 991px)  body overflow hidde
     display: none;
   }
 }
+#navpc .navbar-nav {
+	align-items: center;
+}
 /* navmobile */
 #navmobile {
   padding: .5rem;
@@ -190,7 +193,7 @@ header nav {                     /*media (max-width: 991px)  body overflow hidde
   text-decoration: none;
 }
 #navmobile .collapse {
-  transition: 200ms ease;
+  transition: 0ms ease;
 }
 .vertical-center { /*center menu vertically - maybe take away if more pages are added*/
 	top: -10%;
