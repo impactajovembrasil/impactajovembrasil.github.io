@@ -190,7 +190,12 @@ header nav {                     /*media (max-width: 991px)  body overflow hidde
   text-decoration: none;
 }
 #navmobile .collapse {
-  transition: 300ms ease;
+  transition: 200ms ease;
+}
+.vertical-center { /*center menu vertically - maybe take away if more pages are added*/
+	top: -10%;
+	-ms-transform: translateY(10%);
+	transform: translateY(10%);
 }
 /*********/
 .navbar-brand{
