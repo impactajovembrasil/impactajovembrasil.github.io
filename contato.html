@@ -142,9 +142,20 @@
 	</div>
 
 	<div class="container">
-		<h1>Email</h1>
-		<p><a href="mailto:impactajovembrasil@gmail.com">impactajovembrasil@gmail.com</a></p>
-		<p>Você pode usar o e-mail acima para enviar o seu feedback ou dúvida sobre os nossos projetos, processos de aplicações, organização, patrocínios, parcerias e sobre o que você gostaria de ver no nosso website.</p>
+		<p>Você pode entrar em contato conosco para enviar o seu feedback ou dúvida sobre os nossos projetos, processos de aplicações, organização, patrocínios, parcerias e sobre o que você gostaria de ver no nosso website.</p>
+<!--action https://instagram.us18.list-manage.com/subscribe/post?u=7d91057dd19acfda4ec4833ad&amp;id=005189af86-->
+		<form action="" method="post" id="form-contato">
+	        	
+			<input type="text" name="Nome" id="nome-contato" placeholder="Nome">
+			<div id="inputNumber"></div>
+			<label style="color: white;" for="email-address"></label>
+			<input type="email" id="email-contato" name="EMAIL" required maxlength="64" minlength="7" placeholder="Email"> 
+			<textarea name="mensagem" id="mensagem-contato" cols="30" rows="8" placeholder="Mensagem"></textarea>
+			<div id="textareaVoid"></div>
+			
+			<fieldset> <button class="btn" type="submit" id="btn-contato"> <h4>Enviar</h4> </button> </fieldset>
+			
+		</form>
 	</div>
 	
     </div>
@@ -291,7 +302,39 @@ crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
 integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
 crossorigin="anonymous"></script>
+<script>
+    (function() {
+        var formContact = document.querySelector('#form-contato');
+		var textareaContact = document.querySelector('#form-contato textarea');
+		var textareaVoid = document.querySelector('#form-contato #textareaVoid');
+		var inputNumber = document.querySelector('#form-contato #inputNumber');
+		var pContact = document.querySelector('#form-contato p');
+		var p = document.createElement('p');
+		var check = false;
 
+		p.innerHTML = 'Preencha o campo.';
+		p.style.color = 'red';
+		p.style.fontSize = '12px';
+
+		formContact.addEventListener('submit', function(e) {
+			e.preventDefault();
+			
+			if (!textareaContact.value) {
+				textareaVoid.appendChild(p);
+
+				return;
+			}
+
+			check = true;
+			if (check) {
+				formContact.submit();
+				textareaContact.value = '';
+				document.querySelector('#form-contato input').value = '';
+				document.querySelector('#form-contato #email-contato').value = '';
+			}
+		});
+    })();
+</script>
 </body>
 
 </html>

@@ -1050,9 +1050,84 @@ width:  300px;
     object-fit: cover;
   }
 }
+
 /* CONTATO */
-#contato .container p a {
+#contato .container p {
   text-decoration: none;
+  width: 600px; 
+  text-align: justify; 
+  margin: auto;
+}
+
+#contato #nome-contato {
+  padding: 10px 30px 10px 30px;
+  margin-top: 30px;
+  width: 100%;
+}
+
+#contato #email-contato {
+  padding: 10px 30px 10px 30px;
+  margin: 0px 0px 20px 0px;
+  width: 100%;
+}
+
+#contato #mensagem-contato {
+  padding: 10px 30px 10px 30px;
+  width: 100%;
+}
+
+#contato .container form {
+  width: 600px;
+}
+
+#contato .container .btn {
+  background-color: #0d5900;
+  border-color: #0d5900;
+  padding: 0.5em 2.5em;
+  padding-bottom: 0em;
+}
+
+#contato .container .btn:hover {
+  background-color: black;
+  border-color: black;
+  color: white;
+  transition: background-color .3s ease-in-out;
+  transition: border-color .3s ease-in-out;
+  transition: color .3s ease-in-out;
+}
+
+#contato .container fieldset {
+	text-align: center;
+}
+
+
+@media (max-width: 768px) {
+  #contato .container p {
+    width: 300px; 
+    text-align: justify; 
+    margin: auto;
+  }
+
+  #contato #nome-contato {
+    padding: 10px 30px 10px 30px;
+    margin-top: 30px;
+    width: 100%;
+  }
+  
+  #contato #email-contato {
+    padding: 10px 30px 10px 30px;
+    margin: 0px 0px 20px 0px;
+    width: 100%;
+  }
+  
+  #contato #mensagem-contato {
+    padding: 10px 30px 10px 30px;
+    width: 100%;
+  }
+
+  #contato .container form {
+    width: 300px;
+  }
 }
 
 /* TERMOS */
