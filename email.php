@@ -7,9 +7,7 @@
     <title>E-mail enviado</title>
 </head>
 <body>
-
 <?php 
-
 if(isset($_POST(['email']))) && !empty ($_POST (['email']))
 
 $Name = addcslashes ( $_POST ( [ 'Nome' ]))
@@ -30,9 +28,6 @@ if (mail ( $to, $subject, $body, $header)) {
 } else {
     echo("Email não pode ser enviado");
 }
-
-
 ?>
-
 </body>
 </html>
