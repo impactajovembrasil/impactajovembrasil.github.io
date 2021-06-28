@@ -14,7 +14,7 @@ $Name = addcslashes ( $_POST ( [ 'Nome' ]))
 $email = addcslashes ( $_POST ( [ 'EMAIL' ]))
 $message = addcslashes ( $_POST ( [ 'messagem' ]))
 
-$to = "  ";
+$to = " impactajovembrasil@gmail.com ";
 $subject = "Contato - ImpactaJovemBrasil";
 $body = "Nome: " .$Name. "\r\n"
          "Email: " .$email. "\r\n"
