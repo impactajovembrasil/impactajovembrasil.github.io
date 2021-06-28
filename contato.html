@@ -143,7 +143,7 @@
 
 	<div class="container">
 		<p>Você pode entrar em contato conosco para enviar o seu feedback ou dúvida sobre os nossos projetos, processos de aplicações, organização, patrocínios, parcerias e sobre o que você gostaria de ver no nosso website.</p>
-<!--action https://instagram.us18.list-manage.com/subscribe/post?u=7d91057dd19acfda4ec4833ad&amp;id=005189af86-->
+
 		<form action="/email.php" method="post" id="form-contato">
 	        	
 			<input type="text" name="Nome" id="nome-contato" placeholder="Nome">
@@ -310,12 +310,13 @@ crossorigin="anonymous"></script>
 		var inputNumber = document.querySelector('#form-contato #inputNumber');
 		var pContact = document.querySelector('#form-contato p');
 		var p = document.createElement('p');
-		var check = false;
+
 
 		p.innerHTML = 'Preencha o campo.';
 		p.style.color = 'red';
 		p.style.fontSize = '12px';
 
+		
 		formContact.addEventListener('submit', function(e) {
 			e.preventDefault();
 			
@@ -325,13 +326,10 @@ crossorigin="anonymous"></script>
 				return;
 			}
 
-			check = true;
-			if (check) {
-				formContact.submit();
-				textareaContact.value = '';
-				document.querySelector('#form-contato input').value = '';
-				document.querySelector('#form-contato #email-contato').value = '';
-			}
+			formContact.submit();
+			textareaContact.value = '';
+			document.querySelector('#form-contato input').value = '';
+			document.querySelector('#form-contato #email-contato').value = '';
 		});
     })();
 </script>

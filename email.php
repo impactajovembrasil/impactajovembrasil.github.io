@@ -8,7 +8,7 @@
 </head>
 <body>
 <?php 
-if(isset($_POST(['email']))) && !empty ($_POST (['email']))
+if(isset($_POST(['email']))) && !empty ($_POST (['email'])) 
 
 $Name = addcslashes ( $_POST ( [ 'Nome' ]))
 $email = addcslashes ( $_POST ( [ 'EMAIL' ]))
