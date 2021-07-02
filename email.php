@@ -21,7 +21,7 @@ $body = "Nome: " .$Name. "\r\n"
          "Mensagem: " .$message;
          
 $header = "From: ". "\r\n".  "Reply-to: " .$email. "\r\n"
-"X=Mailer:php/". phpversion (7.3.2.1);
+"X=Mailer:php/". phpversion (7.3.21);
 
 if (mail ( $to, $subject, $body, $header)) {
     echo ("Email enviado!");
