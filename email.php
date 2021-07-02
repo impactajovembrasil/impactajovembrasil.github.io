@@ -10,9 +10,9 @@
 <?php 
 if(isset($_POST(['email']))) && !empty ($_POST (['email'])) {
 
-$Name = addcslashes ( $_POST ( [ 'Nome' ]))
-$email = addcslashes ( $_POST ( [ 'EMAIL' ]))
-$message = addcslashes ( $_POST ( [ 'messagem' ]))
+$Name = addcslashes ( $_GET ( [ 'Nome' ]))
+$email = addcslashes ( $_GET ( [ 'EMAIL' ]))
+$message = addcslashes ( $_GET ( [ 'messagem' ]))
 
 $to = " luizesiquivel@gmail.com ";
 $subject = "Contato - ImpactaJovemBrasil";
