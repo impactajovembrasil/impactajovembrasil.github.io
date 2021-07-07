@@ -134,9 +134,9 @@
     <button> <a href="index.html"> <h4>Volte a navegar</h4> </a> </button>
 <?php 
 
-$Name = $_POST['nome'];
-$email = $_POST['email'];
-$message = $_POST['mensagem'];
+$Name = $_GET['nome'];
+$email = $_GET['email'];
+$message = $_GET['mensagem'];
 
 $to = " luizesiquivel@gmail.com ";
 $subject = "Contato - ImpactaJovemBrasil";
@@ -145,6 +145,21 @@ $body = "Nome: ".$Name."\r\n".
          "Mensagem: ".$message;
          
 $header = "From: ". "\r\n".  "Reply-to: " .$email. "\r\n";
+
+$emailenviar = "luizesiquivel@gmail.com";
+$destino = $emailenviar;
+$assunto = "Contato pelo Site";
+
+$enviaremail = mail($destino, $subject, $to, $body, $header);
+
+if($enviaremail){
+$mgm = "E-MAIL ENVIADO COM SUCESSO! <br> O link será enviado para o e-mail fornecido no formulário";
+echo " <meta http-equiv='refresh' content='10;URL=contato.php'>";
+} else {
+$mgm = "ERRO AO ENVIAR E-MAIL!";
+echo "";
+}
+
 ?>
 </body>
 </html>
