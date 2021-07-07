@@ -144,15 +144,13 @@
 	<div class="container">
 		<p>Você pode entrar em contato conosco para enviar o seu feedback ou dúvida sobre os nossos projetos, processos de aplicações, organização, patrocínios, parcerias e sobre o que você gostaria de ver no nosso website.</p>
 <!--action https://instagram.us18.list-manage.com/subscribe/post?u=7d91057dd19acfda4ec4833ad&amp;id=005189af86-->
-		<form method="GET" action="email.php" id="form-contato">
+		<input  action="email.php" method="POST" id="form-contato">
 	        	
-			<input type="text" name="Nome" id="nome-contato" placeholder="Nome">
-			<div id="inputNumber"></div>
+			<input type="text" name="nome" id="nome-contato" placeholder="Nome">
 			<label style="color: white;" for="email-address"></label>
-			<input type="email" id="email-contato" name="EMAIL" required maxlength="64" minlength="7" placeholder="Email"> 
-			<textarea name="mensagem" id="mensagem-contato" cols="30" rows="8" placeholder="Mensagem"></textarea>
-			<div id="textareaVoid"></div>
-			
+			<input type="email" id="email-contato" name="email" required maxlength="64" minlength="7" placeholder="Email"> 
+			<textarea id="mensagem-contato" cols="30" rows="8" placeholder="Mensagem"><input type="text" name="mensagem"></textarea>
+						
 			<fieldset> <button class="btn" type="submit"> <h4>Enviar</h4> </button> </fieldset>
 			
 		</form>
