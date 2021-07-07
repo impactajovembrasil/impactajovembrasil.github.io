@@ -7,28 +7,28 @@
     <title>E-mail enviado</title>
 </head>
 <body>
-<?php 
-if(isset($_GET(['email']))) && !empty ($_GET (['email'])) {
 
-$Name = addcslashes ( $_GET ( [ 'Nome' ]))
-$email = addcslashes ( $_GET ( [ 'EMAIL' ]))
-$message = addcslashes ( $_GET ( [ 'messagem' ]))
+<h2> Email enviado com sucesso!</h2>
+
+<?php 
+$Nome = $_GET [ 'Nome' ];
+$EMAIL = $_GET [ 'EMAIL' ];
+$messagem = $_GET [ 'messagem' ];
 
 $to = " luizesiquivel@gmail.com ";
 $subject = "Contato - ImpactaJovemBrasil";
-$body = "Nome: " .$Name. "\r\n"
-         "Email: " .$email. "\r\n"
-         "Mensagem: " .$message;
+$body = "Nome: " .$Nome. "\r\n".
+         "Email: " .$email. "\r\n".
+         "Mensagem: " .$messagem;
          
-$header = "From: ". "\r\n".  "Reply-to: " .$email. "\r\n"
-"X=Mailer:php/". phpversion (7.3.21);
+$header = "From: ". $to. "\r\n".  "Reply-to: " .$email. "\r\n";
 
 if (mail ( $to, $subject, $body, $header)) {
-    echo ("Email enviado!");
+    echo ("Obrigado pelo contato, nosso time irá ler e lhe responder o mais rápido possivel");
 } else {
-    echo("Email não pode ser enviado");
+    echo ("Desculpe, seu contato não pode ser computado, favor tente de novo mais tarde");
 }
-}
+
 ?>
 </body>
 </html>
