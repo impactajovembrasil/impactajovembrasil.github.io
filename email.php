@@ -146,7 +146,7 @@ $body = "Nome: ".$Name."\r\n".
          
 $header = "From: ". "\r\n".  "Reply-to: " .$email. "\r\n";
 
-$emailenviar = "luizesiquivel@gmail.com";
+$emailenviar = "impactajovembrasil@gmail.com";
 $destino = $emailenviar;
 $assunto = "Contato pelo Site";
 
