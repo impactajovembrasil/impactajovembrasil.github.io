@@ -1,5 +1,5 @@
 <?php
-include_once 'conexao.php';
+require_once 'conexao.php';
 ?>
 <!DOCTYPE html>
 <html>
@@ -148,57 +148,13 @@ include_once 'conexao.php';
 		<p>Você pode entrar em contato conosco para enviar o seu feedback ou dúvida sobre os nossos projetos, processos de aplicações, organização, patrocínios, parcerias e sobre o que você gostaria de ver no nosso website.</p>
 <!--action https://instagram.us18.list-manage.com/subscribe/post?u=7d91057dd19acfda4ec4833ad&amp;id=005189af86-->
 
-<?php
-        $dados = filter_input_array(INPUT_POST, FILTER_DEFAULT);
-
-        if (!empty($dados['contato'])) {
-        
-            $empty_input = false;
-
-            $dados = array_map('trim', $dados);
-            if (in_array("", $dados)) {
-                $empty_input = true;
-                echo "<p style='color: #f00;'>Erro: Necessário preencher todos campos!</p>";
-            } elseif (!filter_var($dados['email'], FILTER_VALIDATE_EMAIL)) {
-                $empty_input = true;
-                echo "<p style='color: #f00;'>Erro: Necessário preencher com e-mail válido!</p>";
-            }
-
-            if (!$empty_input) {
-                $query_usuario = "INSERT INTO usuarios (nome, email, mensagem) VALUES (:nome, :email, :mensagem) ";
-                $contactar = $conn->prepare($query_usuario);
-                $contactar->bindParam(':nome', $dados['nome'], PDO::PARAM_STR);
-                $contactar->bindParam(':email', $dados['email'], PDO::PARAM_STR);
-                $contactar->bindParam(':email', $dados['mensagem'], PDO::PARAM_STR);
-                $contactar->execute();
-                if ($contactar->rowCount()) {
-                    echo "<p style='color: green;'>Recebemos seu contato!</p>";
-                    unset($dados);
-                } else {
-                    echo "<p style='color: #f00;'>Erro: não conseguimos receber seu contato</p>";
-                }
-            }
-        }
-        ?>
-		<form name="contato" method="POST" action="">
+		<form name="contato" method="POST" action="salvar_mensagem.php">
 	        	
 		<label style="color: white;" for="email-address"> nome </label>
-			<input type="text" name="nome" id="nome-contato" value="<?php
-            if (isset($dados['nome'])) {
-                echo $dados['nome'];
-            }
-            ?>">
+			<input type="text" name="nome" id="nome-contato">
 			<label style="color: white;" for="email-address"> email </label>
-			<input type="email" id="email-contato" name="email" required maxlength="64" minlength="7" value="<?php
-            if (isset($dados['email'])) {
-                echo $dados['email'];
-            }
-            ?>"> 
-			<textarea name="mensagem" id="mensagem" cols="30" rows="10" value="<?php
-            if (isset($dados['mensagem'])) {
-                echo $dados['mensagem'];
-            }
-            ?>"> sua mensagem </textarea>
+			<input type="email" id="email-contato" name="email" required maxlength="64" minlength="7"> 
+			<textarea name="mensagem" id="mensagem" cols="30" rows="10" > sua mensagem </textarea>
 						
 			<fieldset><input type="submit" value="contato" name="contato"></fieldset>
 			
@@ -206,15 +162,6 @@ include_once 'conexao.php';
 	</div>
 	
     </div>
-
-	
-
-    
-
-
-
-
-
        <!-------------------------------------------------------------------------------------------------------------------------->
 
 	
