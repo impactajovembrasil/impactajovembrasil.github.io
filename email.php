@@ -24,7 +24,7 @@ $header = "From: ". "\r\n".  "Reply-to: " .$email. "\r\n"
 "X=Mailer:php/". phpversion ();
 
 if (mail ( $to, $subject, $body, $header)) {
-    echo ("Email enviado!");
+    echo ("<meta http-equiv='refresh' content='10;URL=./contato.html'>");
 } else {
     echo("Email não pode ser enviado");
 }
