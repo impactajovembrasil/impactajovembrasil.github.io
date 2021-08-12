@@ -1087,6 +1087,14 @@ width:  300px;
   padding-bottom: 0em;
 }
 
+#contato #input-submit {
+  color: white;
+  font-size: 1.5rem;
+  line-height: 2;
+  font-weight: 400;
+  font-family: 'Bebas Neue';
+}
+
 #contato .container .btn:hover {
   background-color: black;
   border-color: black;
