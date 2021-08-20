@@ -697,6 +697,7 @@ section.footer-text a:hover {
   padding: 0;
   margin-right: 10px;
 }
+
 /* NEWSLETTER */
 .home {
     position: absolute;
@@ -764,6 +765,9 @@ fieldset h4 {
 form { 
 margin: 0 auto; 
 width:  300px;
+}
+.section-newsletter {
+  margin-top: 1.5rem;
 }
 .section-newsletter span {
 	color: #ff0054;
