@@ -1075,6 +1075,12 @@ width:  300px;
   width: 100%;
 }
 
+#assunto-contato {
+  padding: 10px 30px 10px 30px;
+  margin: 0px 0px 20px 0px;
+  width: 100%;
+}
+
 #contato #mensagem-contato {
   padding: 10px 30px 10px 30px;
   width: 100%;
